@@ -1,4 +1,9 @@
 <?php
+upload_max_filesize = 10240M  # 10GB por archivo (ajusta según necesidades)
+post_max_size = 10240M        # 10GB máximo por POST
+max_execution_time = 300       # 5 minutos para ejecución
+max_input_time = 300           # 5 minutos para recibir datos
+memory_limit = 512M            # 512MB de memoria
 session_start();
 require 'db_config.php';
 
